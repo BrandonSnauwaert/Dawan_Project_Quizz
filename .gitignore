@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+reports/
+.vscode/
+.coverage
+.scannerwork/
+Dawan_Projet/

@@ -1,0 +1,54 @@
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QUIZ\QUIZ EN LIGNE\Quiz.Core\bin\Debug\Quiz.Core.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QUIZ\QUIZ EN LIGNE\Quiz.Core\bin\Debug\Quiz.Core.pdb
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QUIZ\QUIZ EN LIGNE\Quiz.Core\obj\Debug\Quiz.Core.csproj.CoreCompileInputs.cache
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QUIZ\QUIZ EN LIGNE\Quiz.Core\obj\Debug\Quiz.Core.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QUIZ\QUIZ EN LIGNE\Quiz.Core\obj\Debug\Quiz.Core.pdb
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QUIZ\QUIZ EN LIGNE\Quiz.Core\obj\Debug\Quiz.Core.csproj.AssemblyReference.cache
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QUIZ EN LIGNE\Quiz.Core\bin\Debug\Quiz.Core.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QUIZ EN LIGNE\Quiz.Core\bin\Debug\Quiz.Core.pdb
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QUIZ EN LIGNE\Quiz.Core\obj\Debug\Quiz.Core.csproj.AssemblyReference.cache
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QUIZ EN LIGNE\Quiz.Core\obj\Debug\Quiz.Core.csproj.CoreCompileInputs.cache
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QUIZ EN LIGNE\Quiz.Core\obj\Debug\Quiz.Core.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QUIZ EN LIGNE\Quiz.Core\obj\Debug\Quiz.Core.pdb
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet2\Dawan_Project-master\Quiz.Core\bin\Debug\Quiz.Core.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet2\Dawan_Project-master\Quiz.Core\bin\Debug\Quiz.Core.pdb
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet2\Dawan_Project-master\Quiz.Core\obj\Debug\Quiz.Core.csproj.AssemblyReference.cache
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet2\Dawan_Project-master\Quiz.Core\obj\Debug\Quiz.Core.csproj.CoreCompileInputs.cache
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet2\Dawan_Project-master\Quiz.Core\obj\Debug\Quiz.Core.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet2\Dawan_Project-master\Quiz.Core\obj\Debug\Quiz.Core.pdb
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet2\Dawan_Project-master\Quiz.Core\bin\Debug\Quiz.Core.dll.config
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet2\Dawan_Project-master\Quiz.Core\bin\Debug\EntityFramework.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet2\Dawan_Project-master\Quiz.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet2\Dawan_Project-master\Quiz.Core\bin\Debug\EntityFramework.xml
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet2\Dawan_Project-master\Quiz.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet2\Dawan_Project-master\Quiz.Core\obj\Debug\Quiz.Core.csproj.CopyComplete
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet2\Dawan_Project-master\Quiz.Core\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet2\Dawan_Project-master\Quiz.Core\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet3\Dawan_Project-master\Quiz.Core\bin\Debug\Quiz.Core.dll.config
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet3\Dawan_Project-master\Quiz.Core\bin\Debug\Quiz.Core.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet3\Dawan_Project-master\Quiz.Core\bin\Debug\Quiz.Core.pdb
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet3\Dawan_Project-master\Quiz.Core\bin\Debug\EntityFramework.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet3\Dawan_Project-master\Quiz.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet3\Dawan_Project-master\Quiz.Core\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet3\Dawan_Project-master\Quiz.Core\bin\Debug\EntityFramework.xml
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet3\Dawan_Project-master\Quiz.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet3\Dawan_Project-master\Quiz.Core\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet3\Dawan_Project-master\Quiz.Core\obj\Debug\Quiz.Core.csproj.AssemblyReference.cache
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet3\Dawan_Project-master\Quiz.Core\obj\Debug\Quiz.Core.csproj.CoreCompileInputs.cache
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet3\Dawan_Project-master\Quiz.Core\obj\Debug\Quiz.Core.csproj.CopyComplete
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet3\Dawan_Project-master\Quiz.Core\obj\Debug\Quiz.Core.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\projet3\Dawan_Project-master\Quiz.Core\obj\Debug\Quiz.Core.pdb
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\bin\Debug\Quiz.Core.dll.config
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\bin\Debug\Quiz.Core.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\bin\Debug\Quiz.Core.pdb
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\bin\Debug\EntityFramework.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\bin\Debug\EntityFramework.xml
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\obj\Debug\Quiz.Core.csproj.AssemblyReference.cache
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\obj\Debug\Quiz.Core.csproj.CoreCompileInputs.cache
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\obj\Debug\Quiz.Core.csproj.CopyComplete
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\obj\Debug\Quiz.Core.dll
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\obj\Debug\Quiz.Core.pdb
