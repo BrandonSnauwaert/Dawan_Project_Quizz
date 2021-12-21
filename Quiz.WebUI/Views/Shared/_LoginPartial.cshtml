@@ -1,0 +1,37 @@
+﻿@if (Session["Connexion"] == null)
+{
+<li>@Html.ActionLink("Créer un compte", "Register", "Account", new { Area = "" }, new { @class = "button primary" })</li>
+                <li>@Html.ActionLink("Connexion", "Login", "Account", new { Area = "" }, new { @class = "button primary" })</li> }
+            else
+            {
+                { <!--S 'il est connecté--> if ((int)Session["TypeUtilisateur"] == 0)
+                                        {
+                    <li class="has-children active">
+                        @Html.ActionLink((String)Session["Connexion"], "Index", "Home", null, new { data_toggle = "dropdown", @class = "dropdown-toggle" })
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Déconnexion", "Logout", "Account")</li>
+                            <li>@Html.ActionLink("Profil ", "Details", "Account", new { id = Session["Id"] }, null)</li>
+                        </ul>
+                    </li>
+                }
+                else
+                {
+                    <li class="has-children active list-navbar">
+                        @Html.ActionLink("Admin " + Session["Connexion"], "Index", "Home", null, new { data_toggle = "dropdown", @class = "dropdown-toggle" })
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Gestion des utilisateurs", "Index", "Admin")</li>
+                            <li>@Html.ActionLink("Déconnexion", "Logout", "Account")</li>
+                            <li>@Html.ActionLink("Profil ", "Details", "Account", new { id = Session["Id"] }, null)</li>
+                        </ul>
+                    </li>
+                }
+
+
+
+
+
+            }
+
+        }
+
+

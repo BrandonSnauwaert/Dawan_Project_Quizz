@@ -1,0 +1,70 @@
+﻿@model Quiz.Core.Models.Quizz
+
+@{ ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+
+<div class="wrapper style1">
+
+
+    <div class="container">
+        <div class="row gtr-uniform gtr-50">
+
+
+            <div class="col-2">
+                <span class="image fit">
+                    <img src="~/Content/Images/Quiz/@Model.Image" />
+                </span>
+            </div>
+            <div class="col-10">
+                <h2>@Html.DisplayFor(model => model.Title)</h2>
+            </div>
+            @if (Model.Questions == null || Model.Questions.Count() == 0)
+            {
+<div class="col-12 align-center">
+    <h3>Aucune question dans le quiz</h3>
+</div> }
+else
+{
+<div class="col-12">
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Question</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var question in Model.Questions)
+                {
+<tr>
+    <td>@question.NumOrder</td>
+    <td>@question.QstText</td>
+    <td>@Html.ActionLink("Edit", "Edit", "Questions", new { id = question.Id }, null) </td>
+</tr>
+           }
+            </tbody>
+        </table>
+
+
+
+    </div>
+</div>      }
+
+
+
+            <div class="col-12">
+                <ul class="actions">
+                    <li>
+                        @Html.ActionLink("Edit", "Edit", new { id = Model.Id })
+                    </li>
+                    <li>
+                        @Html.ActionLink("Back to List", "Index")
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
