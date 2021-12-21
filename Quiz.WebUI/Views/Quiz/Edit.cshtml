@@ -1,0 +1,74 @@
+﻿@model Quiz.Core.Models.Quizz
+
+@{ ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<div class="wrapper style1">
+    <div class="container">
+
+
+        @using (Html.BeginForm("Edit", "Quiz", FormMethod.Post, new { encType = "multipart/form-data" }))
+        {
+@Html.AntiForgeryToken()
+                <div class="row gtr-50 gtr-uniform">
+                    <div class="col-2">
+                        <span class="image fit" style="margin-bottom: 20px">
+                            <img src="~/Content/Images/Quiz/@Model.Image" />
+                        </span>
+                        <label class="button">
+                            <input type="file" name="Image" style="display:none;" />
+                            Changer l'image
+                        </label>
+                    </div>
+                    <div class="col-10">
+                        @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @placeholder = "Titre du quizz" } })
+                        @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                    </div>
+
+                    @if (Model.Questions == null || Model.Questions.Count() == 0)
+                    {
+
+                <div class="col-12 align-center">
+                    <h3>Ce quiz ne contient pas de questions</h3>
+                </div>
+     }
+                    else
+                    {
+    <div class="table-wrapper col-12">
+        <table>
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Question</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var question in Model.Questions)
+                {
+<tr>
+    <td>@question.NumOrder</td>
+    <td>@question.QstText</td>
+    <td>@Html.ActionLink("Edit", "Edit", "Questions", new { id = question.Id }, null) </td>
+</tr>}
+            </tbody>
+        </table>
+    </div>}
+
+                    <div class="col-12 align-center">
+                        <a class="button">+ Ajouter une question</a>
+                    </div>
+
+                    <div class="col-12">
+                        <ul class="actions">
+                            <li><input type="submit" value="Save" class="primary" /></li>
+                        </ul>
+                    </div>
+                </div>}
+
+        <div>
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    </div>
+
+</div>

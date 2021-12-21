@@ -11,7 +11,7 @@ namespace Quiz.Core.Models
     {
 
         public string Title { get; set; }
-        public string QuizCategory { get; set; }
+        public string ThemeName { get; set; }
         public virtual List<Question> Questions { get; set; }
         public string Image { get; set; }
 

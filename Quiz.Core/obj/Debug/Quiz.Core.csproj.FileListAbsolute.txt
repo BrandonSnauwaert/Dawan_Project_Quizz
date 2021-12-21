@@ -52,3 +52,17 @@ C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\obj
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\obj\Debug\Quiz.Core.csproj.CopyComplete
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\obj\Debug\Quiz.Core.dll
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\Quiz.Core\obj\Debug\Quiz.Core.pdb
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\Quiz.Core\bin\Debug\Quiz.Core.dll.config
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\Quiz.Core\bin\Debug\Quiz.Core.dll
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\Quiz.Core\bin\Debug\Quiz.Core.pdb
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\Quiz.Core\bin\Debug\EntityFramework.dll
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\Quiz.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\Quiz.Core\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\Quiz.Core\bin\Debug\EntityFramework.xml
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\Quiz.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\Quiz.Core\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\Quiz.Core\obj\Debug\Quiz.Core.csproj.AssemblyReference.cache
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\Quiz.Core\obj\Debug\Quiz.Core.csproj.CoreCompileInputs.cache
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\Quiz.Core\obj\Debug\Quiz.Core.csproj.CopyComplete
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\Quiz.Core\obj\Debug\Quiz.Core.dll
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\Quiz.Core\obj\Debug\Quiz.Core.pdb

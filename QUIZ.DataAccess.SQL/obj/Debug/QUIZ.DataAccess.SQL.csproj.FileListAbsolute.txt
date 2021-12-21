@@ -81,3 +81,23 @@ C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\QUIZ.DataAcce
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\QUIZ.DataAccess.SQL\obj\Debug\QUIZ.DataAccess.SQL.pdb
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\QUIZ.DataAccess.SQL\obj\Debug\QUIZ.DataAccess.SQL.Migrations.InitialModel.resources
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\QuizProjet-master\QUIZ.DataAccess.SQL\obj\Debug\QUIZ.DataAccess.SQL.csproj.GenerateResource.cache
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\bin\Debug\QUIZ.DataAccess.SQL.dll.config
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\bin\Debug\QUIZ.DataAccess.SQL.dll
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\bin\Debug\QUIZ.DataAccess.SQL.pdb
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\bin\Debug\EntityFramework.dll
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\bin\Debug\Quiz.Core.dll
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\bin\Debug\Quiz.Core.pdb
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\bin\Debug\Quiz.Core.dll.config
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\bin\Debug\EntityFramework.xml
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\obj\Debug\QUIZ.DataAccess.SQL.csproj.AssemblyReference.cache
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\obj\Debug\QUIZ.DataAccess.SQL.Migrations.InitialModel.resources
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\obj\Debug\QUIZ.DataAccess.SQL.csproj.GenerateResource.cache
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\obj\Debug\QUIZ.DataAccess.SQL.csproj.CoreCompileInputs.cache
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\obj\Debug\QUIZ.DataAccess.SQL.csproj.CopyComplete
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\obj\Debug\QUIZ.DataAccess.SQL.dll
+C:\Users\Christopher\Source\Repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\obj\Debug\QUIZ.DataAccess.SQL.pdb
+C:\Users\Christopher\source\repos\Dawan_Project_Quizz\QUIZ.DataAccess.SQL\obj\Debug\QUIZ.DataAccess.SQL.Migrations.ChangementModelQuizz.resources

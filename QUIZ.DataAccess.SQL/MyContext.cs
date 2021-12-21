@@ -19,7 +19,7 @@ namespace QUIZ.DataAccess.SQL
         public DbSet<Question> Questions { get; set; }
         public DbSet<Theme> Themes { get; set; }
       
-        public virtual DbSet<Quizz> Quizzes { get; set; }
+        public virtual DbSet<Quiz.Core.Models.Quizz> Quizzes { get; set; }
     
         public virtual DbSet<Answer> Answers { get; set; }
  
