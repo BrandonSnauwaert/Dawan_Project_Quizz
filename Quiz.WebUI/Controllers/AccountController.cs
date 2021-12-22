@@ -116,7 +116,7 @@ namespace Quiz.WebUI.Controllers
             Session["Connexion"] = null;
             Session["Id"] = null;
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Account");
         }
 
 

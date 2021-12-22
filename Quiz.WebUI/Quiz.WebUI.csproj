@@ -151,6 +151,7 @@
     <Content Include="Content\assets\css\images\overlay.png" />
     <Content Include="Content\assets\css\main.css" />
     <Content Include="Content\assets\css\noscript.css" />
+    <Content Include="Content\assets\css\styles.css" />
     <Content Include="Content\assets\js\breakpoints.min.js" />
     <Content Include="Content\assets\js\browser.min.js" />
     <Content Include="Content\assets\js\jquery.dropotron.min.js" />

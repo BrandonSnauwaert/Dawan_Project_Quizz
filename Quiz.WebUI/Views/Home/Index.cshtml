@@ -1,4 +1,19 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<div class="button text-capitalize" style="margin:5%; color:white">
+    @Html.ActionLink("Gestion des utilisateurs", "Index", "Admin")
+</div>
 
+<div class="center">
+    <ul  style="list-style:none; margin:2px">
+       
+
+        <li class="button">@Html.ActionLink("Gestion des Themes", "Index", "Themes")</li>
+        <li class="button">@Html.ActionLink("Gestion des Quizzes", "Index", "Quiz")</li>
+
+        <li class="button">@Html.ActionLink("Gestion des Questionnaires", "Index", "Questions")</li>
+        <li class="button" style="margin-top:5px">@Html.ActionLink("Gestion des Réponses aux questions", "Index", "Questions")</li>
+    
+    </ul>
+</div>

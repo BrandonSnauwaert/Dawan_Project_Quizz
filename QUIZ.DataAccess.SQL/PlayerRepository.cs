@@ -20,7 +20,7 @@ namespace QUIZ.DataAccess.SQL
         public User FindByUsername(string username)
         {
 
-            return DataContext.Players.SingleOrDefault(p => p.Username == username);
+            return DataContext.Users.SingleOrDefault(p => p.Username == username);
         }
     }
 }

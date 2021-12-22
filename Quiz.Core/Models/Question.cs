@@ -27,5 +27,6 @@ namespace Quiz.Core.Models
         {
             Answers = new List<Answer>();
         }
+
     }
 }
