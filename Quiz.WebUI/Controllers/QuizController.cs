@@ -95,7 +95,7 @@ namespace Quiz.WebUI.Controllers
         {
             if (ModelState.IsValid)
             {
-                if(image != null)
+                if (image != null)
                 {
                     string imagePath = Server.MapPath("~/Content/Images/Quiz/") + quiz.Id + Path.GetExtension(image.FileName);
                     if (System.IO.File.Exists(imagePath))
@@ -104,6 +104,8 @@ namespace Quiz.WebUI.Controllers
                     image.SaveAs(imagePath);
                     quiz.Image = quiz.Id + Path.GetExtension(image.FileName);
                 }
+                else
+                    quiz.Image = quizDao.FindById(quiz.Id).Image;
 
                 quizDao.Update(quiz);
                 quizDao.SaveChanges();
