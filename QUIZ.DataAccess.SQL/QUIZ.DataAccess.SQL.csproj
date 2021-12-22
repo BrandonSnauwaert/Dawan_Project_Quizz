@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IPlayerRepository.cs" />
-    <Compile Include="LogicMetier\IQuizRepository.cs" />
+    <Compile Include="LogicMetier\IRepository.cs" />
     <Compile Include="Migrations\202112201459369_InitialModel.cs" />
     <Compile Include="Migrations\202112201459369_InitialModel.Designer.cs">
       <DependentUpon>202112201459369_InitialModel.cs</DependentUpon>

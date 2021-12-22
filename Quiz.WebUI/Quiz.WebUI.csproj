@@ -142,7 +142,9 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\IPlayerService.cs" />
+    <Compile Include="Service\IServiceRepository.cs" />
     <Compile Include="Service\PlayerService.cs" />
+    <Compile Include="Service\ServiceRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\assets\css\fontawesome-all.min.css" />
@@ -193,6 +195,32 @@
     <Content Include="Content\assets\webfonts\fa-solid-900.ttf" />
     <Content Include="Content\assets\webfonts\fa-solid-900.woff" />
     <Content Include="Content\assets\webfonts\fa-solid-900.woff2" />
+    <Content Include="Content\assets\sass\base\_page.scss" />
+    <Content Include="Content\assets\sass\base\_reset.scss" />
+    <Content Include="Content\assets\sass\base\_typography.scss" />
+    <Content Include="Content\assets\sass\components\_actions.scss" />
+    <Content Include="Content\assets\sass\components\_box.scss" />
+    <Content Include="Content\assets\sass\components\_button.scss" />
+    <Content Include="Content\assets\sass\components\_contact.scss" />
+    <Content Include="Content\assets\sass\components\_features.scss" />
+    <Content Include="Content\assets\sass\components\_form.scss" />
+    <Content Include="Content\assets\sass\components\_icon.scss" />
+    <Content Include="Content\assets\sass\components\_icons.scss" />
+    <Content Include="Content\assets\sass\components\_image.scss" />
+    <Content Include="Content\assets\sass\components\_list.scss" />
+    <Content Include="Content\assets\sass\components\_mini-posts.scss" />
+    <Content Include="Content\assets\sass\components\_pagination.scss" />
+    <Content Include="Content\assets\sass\components\_posts.scss" />
+    <Content Include="Content\assets\sass\components\_row.scss" />
+    <Content Include="Content\assets\sass\components\_section.scss" />
+    <Content Include="Content\assets\sass\components\_table.scss" />
+    <Content Include="Content\assets\sass\layout\_banner.scss" />
+    <Content Include="Content\assets\sass\layout\_footer.scss" />
+    <Content Include="Content\assets\sass\layout\_header.scss" />
+    <Content Include="Content\assets\sass\layout\_main.scss" />
+    <Content Include="Content\assets\sass\layout\_menu.scss" />
+    <Content Include="Content\assets\sass\layout\_sidebar.scss" />
+    <Content Include="Content\assets\sass\layout\_wrapper.scss" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -239,7 +267,6 @@
     <Content Include="Views\Answers\Details.cshtml" />
     <Content Include="Views\Answers\Edit.cshtml" />
     <Content Include="Views\Answers\Index.cshtml" />
-    <Content Include="Views\Questions\Create.cshtml" />
     <Content Include="Views\Questions\Delete.cshtml" />
     <Content Include="Views\Questions\Details.cshtml" />
     <Content Include="Views\Questions\Edit.cshtml" />
@@ -249,6 +276,7 @@
     <Content Include="Views\Themes\Details.cshtml" />
     <Content Include="Views\Themes\Edit.cshtml" />
     <Content Include="Views\Themes\Index.cshtml" />
+    <Content Include="Views\Questions\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

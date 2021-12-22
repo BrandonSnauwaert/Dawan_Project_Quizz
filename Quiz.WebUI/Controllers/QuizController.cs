@@ -15,8 +15,8 @@ namespace Quiz.WebUI.Controllers
     public class QuizController : Controller
     {
 
-        private IQuizRepository<Quizz> quizDao;
-        private IQuizRepository<Theme> themeDao;
+        private IRepository<Quizz> quizDao;
+        private IRepository<Theme> themeDao;
 
         public QuizController()
         {
@@ -41,6 +41,7 @@ namespace Quiz.WebUI.Controllers
 
             return View(quiz);
         }
+
 
         public ActionResult Create()
         {

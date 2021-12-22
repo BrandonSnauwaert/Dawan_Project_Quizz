@@ -4,6 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml"; }
 <div class="wrapper style1 container">
 
+  
     <div class="row gtr-50 gtr-uniform">
         <div class="col-12">
             <h2>Liste des quizs</h2>
@@ -11,34 +12,36 @@
         <div class="col-12">
             @Html.ActionLink("Créer un nouveau quiz", "Create", null, new { @class = "button" })
         </div>
+ 
         @foreach (var quiz in Model)
         {
-<div class="col-3 col-6-medium col-12-small">
-    <div style="background:rgba(255,255,255,0.05); border-radius: 4px;">
+            <div class="col-3 col-6-medium col-12-small" >
+                <div style="background: rgba(255,255,255,0.05); border-radius: 4px">
 
 
-        <div class="image fit align-center" style="margin-bottom:1rem">
-            <img src="~/Content/Images/Quiz/@quiz.Image" />
+                    <div class="image fit align-center" style="margin-bottom:1rem; ">
+                        <img src="~/Content/Images/Quiz/@quiz.Image"  />
 
-        </div>
-        <div class="align-center">
-            <h3>@quiz.Title</h3>
+                    </div>
+                    <div class="align-center">
+                        <h3>@quiz.Title</h3>
 
-            <ul style="padding:0;display:flex; list-style:none; justify-content: space-around">
-                <li style="padding:0">
-                    @Html.ActionLink("Edit", "Edit", new { id = quiz.Id })
-                </li>
-                <li style="padding:0">
-                    @Html.ActionLink("Details", "Details", new { id = quiz.Id })
-                </li>
-                <li style="padding:0">
-                    @Html.ActionLink("Delete", "Delete", new { id = quiz.Id })
-                </li>
-            </ul>
+                        <ul style="padding:0;display:flex; list-style:none; justify-content: space-around">
+                            <li style="padding:0">
+                                @Html.ActionLink("Edit", "Edit", new { id = quiz.Id })
+                            </li>
+                            <li style="padding:0">
+                                @Html.ActionLink("Details", "Details", new { id = quiz.Id })
+                            </li>
+                            <li style="padding:0">
+                                @Html.ActionLink("Delete", "Delete", new { id = quiz.Id })
+                            </li>
+                        </ul>
 
-        </div>
-    </div>
-</div>}
+                    </div>
+                </div>
+            </div>
+        }
     </div>
 
 

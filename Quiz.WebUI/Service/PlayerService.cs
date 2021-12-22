@@ -12,7 +12,7 @@ namespace Quiz.WebUI.Service
 {
     public class PlayerService : IPlayerService
     {
-        private IQuizRepository<User> userDao;
+        private IRepository<User> userDao;
         private IPlayerRepository playerCustomRepository;
 
         public PlayerService()
@@ -20,7 +20,7 @@ namespace Quiz.WebUI.Service
 
         }
 
-        public PlayerService(IQuizRepository<User> userDao, IPlayerRepository playerCustomRepository)
+        public PlayerService(IRepository<User> userDao, IPlayerRepository playerCustomRepository)
         {
             this.userDao = userDao;
             this.playerCustomRepository = playerCustomRepository;

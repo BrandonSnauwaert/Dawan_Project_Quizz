@@ -16,7 +16,7 @@ namespace Quiz.WebUI.Controllers
     
     public class AccountController : Controller
     {
-        private IQuizRepository<User> playerDao;
+        private IRepository<User> playerDao;
         private IPlayerService playerService;
         private IPlayerRepository playerCustomRepository;
 
@@ -97,6 +97,8 @@ namespace Quiz.WebUI.Controllers
                     //Connexion a reussi
                     Session["Connexion"] = p.Username;
                     Session["Id"] = p.Id;
+                    
+
 
                     Session["TypeUtilisateur"] = p.TypeUtilisateur;
                     //Session["Photo"] = p.Photos;

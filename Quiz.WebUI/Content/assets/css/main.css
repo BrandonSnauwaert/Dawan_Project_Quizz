@@ -1,7 +1,11 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
-
+/*
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -630,7 +634,6 @@ input, select, textarea {
 
 	.container {
 		margin: 0 auto;
-		margin-left:10%;
 		max-width: calc(100% - 4em);
 		width: 70em;
 	}
@@ -3370,7 +3373,6 @@ input, select, textarea {
 		padding-top: 3.5em;
 	}
 
-
 	#header {
 		background: rgba(39, 40, 51, 0.965);
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
@@ -3533,7 +3535,6 @@ input, select, textarea {
 		background: #272833;
 		padding: 6em 0;
 		text-align: center;
-		
 	}
 
 		#footer .icons .icon.alt {
@@ -4093,7 +4094,7 @@ input, select, textarea {
 		/* Footer */
 
 			#footer {
-				padding: 1em 1.25em;
+				padding: 3em 1.25em;
 			}
 
 				#footer .copyright {

@@ -17,15 +17,14 @@
 
             <nav id="nav">
                 <ul>
+                   @* <li>@Html.ActionLink("Quiz", "Index", "Quizzs")</li>
+                    <li>@Html.ActionLink("Question", "Index", "Questions")</li>
+                    <li>@Html.ActionLink("Categorie", "Index", "Categories")</li>
+                    <li>@Html.ActionLink("Reponse", "Index", "Answers")</li>
+                    <li>@Html.ActionLink("Player", "Index", "Players")</li>
+                    <li><a href="#" class="button btn-default">Inviter</a></li>
+                    <li>@Html.ActionLink("Sign Up", "Create", "Players", new { Area = "" }, new { @class = "button primary" })</li>*@
 
-
-                    @* <li>@Html.ActionLink("Quiz", "Index", "Quizzs")</li>
-                        <li>@Html.ActionLink("Question", "Index", "Questions")</li>
-                        <li>@Html.ActionLink("Categorie", "Index", "Categories")</li>
-                        <li>@Html.ActionLink("Reponse", "Index", "Answers")</li>
-                        <li>@Html.ActionLink("Player", "Index", "Players")</li>
-                        <li><a href="#" class="button btn-default">Inviter</a></li>
-                        <li>@Html.ActionLink("Sign Up", "Create", "Players", new { Area = "" }, new { @class = "button primary" })</li>*@
                     <li>@Html.Partial("_LoginPartial")</li>
 
                 </ul>
@@ -38,8 +37,6 @@
     </div>
     <!-- Footer -->
     @Html.Partial("footer")
-
-
     <!-- Scripts -->
     <script src="/Content/assets/js/jquery.min.js"></script>
     <script src="/Content/assets/js/jquery.scrolly.min.js"></script>

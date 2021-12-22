@@ -41,7 +41,8 @@ namespace Quiz.WebUI.Controllers
         public ActionResult Create()
         {
             ViewBag.QuizId = new SelectList(db.Quizzes, "Id", "Title");
-            return View();
+            Question model = new Question();
+            return View(model);
         }
 
         // POST: Questions/Create

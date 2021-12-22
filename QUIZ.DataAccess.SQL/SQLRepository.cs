@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace QUIZ.DataAccess.SQL
 {
-    public class SQLRepository<T> : IQuizRepository<T> where T : BaseEntity
+    public class SQLRepository<T> : IRepository<T> where T : BaseEntity
     {
       
             //Regroupe l'ensemble des entité gérées

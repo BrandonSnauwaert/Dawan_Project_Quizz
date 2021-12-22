@@ -13,7 +13,7 @@ namespace Quiz.WebUI.Controllers
 {
     public class AdminController : Controller
     {
-        private IQuizRepository<User> playerDao;
+        private IRepository<User> playerDao;
         private IPlayerService playerService;
         private IPlayerRepository playerCustomRepository;
 

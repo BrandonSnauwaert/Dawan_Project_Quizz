@@ -7,7 +7,7 @@ namespace QUIZ.DataAccess.SQL.LogicMetier
     /// interface pour l'implémentation des fonctionctionalites spécifiquées
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public interface IQuizRepository<T>  where T: BaseEntity
+    public interface IRepository<T>  where T: BaseEntity
     {
 
        
