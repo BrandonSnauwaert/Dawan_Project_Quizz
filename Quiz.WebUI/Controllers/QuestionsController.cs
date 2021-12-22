@@ -1,25 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Linq;
+﻿using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 using Quiz.Core.Models;
+using Quiz.WebUI.Service;
 using QUIZ.DataAccess.SQL;
 
 namespace Quiz.WebUI.Controllers
 {
     public class QuestionsController : Controller
     {
-        private MyContext db = new MyContext();
+        
+        private IServiceRepository<Question> repo_qst;
+        private IServiceRepository<Quizz> repo_quiz;
+
+        public QuestionsController()
+        {
+            repo_qst = new ServiceRepository<Question>(new SQLRepository<Question>(new MyContext()));
+            repo_quiz = new ServiceRepository<Quizz>(new SQLRepository<Quizz>(new MyContext()));
+        }
+
+
 
         // GET: Questions
         public ActionResult Index()
         {
-            var questions = db.Questions.Include(q => q.Quiz);
-            return View(questions.ToList());
+            
+            return View(repo_qst.Collection().ToList());
         }
 
         // GET: Questions/Details/5
@@ -29,7 +35,7 @@ namespace Quiz.WebUI.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Question question = db.Questions.Find(id);
+            Question question = repo_qst.FindById((int)id);
             if (question == null)
             {
                 return HttpNotFound();
@@ -40,7 +46,7 @@ namespace Quiz.WebUI.Controllers
         // GET: Questions/Create
         public ActionResult Create()
         {
-            ViewBag.QuizId = new SelectList(db.Quizzes, "Id", "Title");
+            ViewBag.QuizId = new SelectList(repo_quiz.Collection(), "Id", "Title");
             Question model = new Question();
             return View(model);
         }
@@ -54,12 +60,12 @@ namespace Quiz.WebUI.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Questions.Add(question);
-                db.SaveChanges();
+                repo_qst.Insert(question);
+                repo_qst.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.QuizId = new SelectList(db.Quizzes, "Id", "Title", question.QuizId);
+            ViewBag.QuizId = new SelectList(repo_quiz.Collection(), "Id", "Title", question.QuizId);
             return View(question);
         }
 
@@ -70,12 +76,12 @@ namespace Quiz.WebUI.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Question question = db.Questions.Find(id);
+            Question question = repo_qst.FindById((int)id);
             if (question == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.QuizId = new SelectList(db.Quizzes, "Id", "Title", question.QuizId);
+            ViewBag.QuizId = new SelectList(repo_quiz.Collection(), "Id", "Title", question.QuizId);
             return View(question);
         }
 
@@ -88,11 +94,11 @@ namespace Quiz.WebUI.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(question).State = EntityState.Modified;
-                db.SaveChanges();
+                repo_qst.Update(question);
+                repo_qst.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.QuizId = new SelectList(db.Quizzes, "Id", "Title", question.QuizId);
+            ViewBag.QuizId = new SelectList(repo_quiz.Collection(), "Id", "Title", question.QuizId);
             return View(question);
         }
 
@@ -103,7 +109,7 @@ namespace Quiz.WebUI.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Question question = db.Questions.Find(id);
+            Question question = repo_qst.FindById((int)id);
             if (question == null)
             {
                 return HttpNotFound();
@@ -116,19 +122,10 @@ namespace Quiz.WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Question question = db.Questions.Find(id);
-            db.Questions.Remove(question);
-            db.SaveChanges();
+            repo_qst.DeleteById(id);
+            repo_qst.SaveChanges();
             return RedirectToAction("Index");
         }
 
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
     }
 }

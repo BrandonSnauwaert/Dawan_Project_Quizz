@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Quiz.Core.Models;
+using Quiz.WebUI.Service;
 using QUIZ.DataAccess.SQL;
 
 namespace Quiz.WebUI.Controllers
@@ -14,11 +15,18 @@ namespace Quiz.WebUI.Controllers
     public class ThemesController : Controller
     {
         private MyContext db = new MyContext();
+        private IServiceRepository<Theme> repo;
+
+        public ThemesController()
+        {
+            repo = new ServiceRepository<Theme>(new SQLRepository<Theme>(db));
+        }
+
 
         // GET: Categories
         public ActionResult Index()
         {
-            return View(db.Themes.ToList());
+            return View(repo.Collection().ToList());
         }
 
         // GET: Categories/Details/5
@@ -28,7 +36,7 @@ namespace Quiz.WebUI.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Theme theme = db.Themes.Find(id);
+            Theme theme = repo.FindById((int)id);
             if (theme == null)
             {
                 return HttpNotFound();
@@ -51,8 +59,8 @@ namespace Quiz.WebUI.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Themes.Add(theme);
-                db.SaveChanges();
+                repo.Insert(theme);
+                repo.SaveChanges();
                 return RedirectToAction("Index");
             }
 
@@ -66,7 +74,7 @@ namespace Quiz.WebUI.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Theme theme = db.Themes.Find(id);
+            Theme theme = repo.FindById((int)id);
             if (theme== null)
             {
                 return HttpNotFound();
@@ -83,8 +91,8 @@ namespace Quiz.WebUI.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(theme).State = EntityState.Modified;
-                db.SaveChanges();
+                repo.Update(theme);
+                repo.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(theme);
@@ -97,7 +105,7 @@ namespace Quiz.WebUI.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Theme theme = db.Themes.Find(id);
+            Theme theme = repo.FindById((int)id);
             if (theme == null)
             {
                 return HttpNotFound();
@@ -110,9 +118,8 @@ namespace Quiz.WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Theme theme = db.Themes.Find(id);
-            db.Themes.Remove(theme);
-            db.SaveChanges();
+            repo.DeleteById(id);
+            repo.SaveChanges();
             return RedirectToAction("Index");
         }
 

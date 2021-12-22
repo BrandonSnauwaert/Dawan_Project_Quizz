@@ -1,4 +1,5 @@
 ﻿using Quiz.Core.Models;
+using QUIZ.DataAccess.SQL.LogicMetier;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,34 +9,41 @@ namespace Quiz.WebUI.Service
 {
     public class ServiceRepository<T> : IServiceRepository<T> where T:BaseEntity
     {
+        private IRepository<T> dao;
+
+        public ServiceRepository(IRepository<T> dao)
+        {
+            this.dao = dao;
+        }
+
         public IQueryable<T> Collection()
         {
-            throw new NotImplementedException();
+            return dao.Collection();
         }
 
         public void DeleteById(int id)
         {
-            throw new NotImplementedException();
+            dao.DeleteById(id);
         }
 
         public T FindById(int id)
         {
-            throw new NotImplementedException();
+            return dao.FindById(id);
         }
 
         public void Insert(T t)
         {
-            throw new NotImplementedException();
+            dao.Insert(t);
         }
 
         public void SaveChanges()
         {
-            throw new NotImplementedException();
+            dao.SaveChanges();
         }
 
         public void Update(T t)
         {
-            throw new NotImplementedException();
+            dao.Update(t);
         }
     }
 }

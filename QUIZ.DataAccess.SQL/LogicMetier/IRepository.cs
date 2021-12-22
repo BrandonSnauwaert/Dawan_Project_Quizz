@@ -4,7 +4,7 @@ using System.Linq;
 namespace QUIZ.DataAccess.SQL.LogicMetier
 {
     /// <summary>
-    /// interface pour l'implémentation des fonctionctionalites spécifiquées
+    /// interface pour l'implémentation des fonctionctionalites classiques
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public interface IRepository<T>  where T: BaseEntity

@@ -14,23 +14,19 @@ namespace Quiz.WebUI.Controllers
 {
     public class UserController : Controller
     {
-        private IRepository<User> playerDao;
-        private IPlayerService playerService;
-        private IPlayerRepository playerCustomRepository;
-
+        private IServiceRepository<User> repo;
+        
         public UserController()
         {
-            playerDao = new SQLRepository<User>(new MyContext());
-            playerCustomRepository = new PlayerRepository(new MyContext());
-            playerService = new PlayerService(playerDao, playerCustomRepository);
+            repo = new ServiceRepository<User>(new SQLRepository<User>(new MyContext()));
         }
 
 
         // GET: Player
         public ActionResult Index()
         {
-            List<User> players = playerService.FindPlayers();
-            return View(players);
+            
+            return View(repo.Collection().ToList());
         }
 
         public ActionResult Details(int? id)
@@ -40,7 +36,7 @@ namespace Quiz.WebUI.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            User player = playerService.FindById((int)id);
+            User player = repo.FindById((int) id);
             if (player == null)
             {
                 return HttpNotFound();
