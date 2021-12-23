@@ -1,32 +1,35 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model Quiz.Core.ViewModels.ListQuizThemeVM
 
-    if ((int)Session["TypeUtilisateur"] == 1)
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Quizzes</h2>
+@*<div class="col-md-2">
+    <h4>Themes</h4>
+    <div class="list-group">
+        @Html.ActionLink("Toutes", "Index", null, new { @class = Request["Theme"] == null ? "list-group-item active" : "list-group-item" })
+        @foreach (var cat in Model.GetThemes)
+        {
+@Html.ActionLink(cat.ThemeName, "Index", new { Theme = cat.ThemeName }, new { @class = Request["Theme"] == cat.ThemeName ? "list-group-item active" : "list-group-item" })}
+    </div>
+</div>*@
+
+<div class="col-md-10">
+    @foreach (var qz in Model.GetQuizzs)
     {
-        <div class="button" style="margin:5%; color:white">
-            @Html.ActionLink("Gestion des utilisateurs", "Index", "Admin")
-        </div>
+<div class="col-md-4" style="height:300px;padding:10px;margin:10px;border:solid thin solid">
+    <div class="col-md-12">
+        <img style="height:150px" src="~/Content/Images/Quiz/@qz.Image" />
+    </div>
+    <div class="col-md-12">
+        <p>@qz.Title</p>
+    </div>
+    <div class="col-md-12">
+        <p><a href="/Home/Demarrer/@qz.Id">Démarrer</a></p>
+    </div>
+</div>}
+</div>
 
-        <div class="center">
-            <ul style="list-style:none; margin:2px">
-
-
-                <li class="button">@Html.ActionLink("Gestion des Themes", "Index", "Themes")</li>
-                <li class="button">@Html.ActionLink("Gestion des Quizzes", "Index", "Quiz")</li>
-
-                <li class="button">@Html.ActionLink("Gestion des Questionnaires", "Index", "Questions")</li>
-                <li class="button" style="margin-top:5px">@Html.ActionLink("Gestion des Réponses aux questions", "Index", "Questions")</li>
-
-            </ul>
-        </div>
-
-    }
-    else
-    {
-
-        <div class="center" style=" margin-top:25%">
-            @Html.ActionLink("Lancer un Quiz", "Index", "Quiz")
-        </div>
-    }
-
-}	
