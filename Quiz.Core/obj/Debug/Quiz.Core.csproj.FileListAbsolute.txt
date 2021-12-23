@@ -102,7 +102,6 @@ C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\Quiz.Core\bin\Debug\Mic
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\Quiz.Core\bin\Debug\EntityFramework.xml
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\Quiz.Core\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\Quiz.Core\bin\Debug\Microsoft.Bcl.HashCode.xml
-C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\Quiz.Core\obj\Debug\Quiz.Core.csproj.AssemblyReference.cache
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\Quiz.Core\obj\Debug\Quiz.Core.csproj.CoreCompileInputs.cache
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\Quiz.Core\obj\Debug\Quiz.Core.csproj.CopyComplete
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\Quiz.Core\obj\Debug\Quiz.Core.dll

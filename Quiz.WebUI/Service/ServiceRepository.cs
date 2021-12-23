@@ -16,6 +16,7 @@ namespace Quiz.WebUI.Service
             this.dao = dao;
         }
 
+       
         public IQueryable<T> Collection()
         {
             return dao.Collection();
@@ -29,6 +30,11 @@ namespace Quiz.WebUI.Service
         public T FindById(int id)
         {
             return dao.FindById(id);
+        }
+
+        public T FindByUserName(string username)
+        {
+            throw new NotImplementedException();
         }
 
         public void Insert(T t)

@@ -5,5 +5,6 @@ namespace Quiz.WebUI.Service
 {
     public interface IServiceRepository<T> :IRepository<T> where T :BaseEntity
     {
+        
     }
 }

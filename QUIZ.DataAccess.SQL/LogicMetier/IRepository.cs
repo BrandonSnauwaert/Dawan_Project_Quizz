@@ -36,5 +36,7 @@ namespace QUIZ.DataAccess.SQL.LogicMetier
          * insert un élements dans la base de donnée
          */
         void Insert(T t);
+
+       
     }
 }

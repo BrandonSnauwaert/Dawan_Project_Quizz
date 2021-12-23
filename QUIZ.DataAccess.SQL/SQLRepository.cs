@@ -66,6 +66,7 @@ namespace QUIZ.DataAccess.SQL
                 dbSet.Attach(t); //Charge l'objet t dans le context
                 DataContext.Entry(t).State = EntityState.Modified;
             }
-        
+
+      
     }
 }

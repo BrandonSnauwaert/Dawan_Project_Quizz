@@ -118,7 +118,7 @@ namespace Quiz.WebUI.Controllers
             }
             else
             {
-                //Repmlir la table Historique
+                
                 //Envoyer le résultat par email
                 return View("Result");
             }
