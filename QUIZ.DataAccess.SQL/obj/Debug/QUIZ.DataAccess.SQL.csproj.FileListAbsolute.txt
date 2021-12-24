@@ -161,3 +161,4 @@ C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\QUIZ.DataAccess.SQL\obj
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\QUIZ.DataAccess.SQL\obj\Debug\QUIZ.DataAccess.SQL.csproj.CopyComplete
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\QUIZ.DataAccess.SQL\obj\Debug\QUIZ.DataAccess.SQL.dll
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\QUIZ.DataAccess.SQL\obj\Debug\QUIZ.DataAccess.SQL.pdb
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\QUIZ.DataAccess.SQL\obj\Debug\QUIZ.DataAccess.SQL.Migrations.AddFildsOfUser.resources

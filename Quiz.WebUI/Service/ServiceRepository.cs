@@ -32,10 +32,7 @@ namespace Quiz.WebUI.Service
             return dao.FindById(id);
         }
 
-        public T FindByUserName(string username)
-        {
-            throw new NotImplementedException();
-        }
+       
 
         public void Insert(T t)
         {

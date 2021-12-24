@@ -106,3 +106,4 @@ C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\Quiz.Core\obj\Debug\Qui
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\Quiz.Core\obj\Debug\Quiz.Core.csproj.CopyComplete
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\Quiz.Core\obj\Debug\Quiz.Core.dll
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\Quiz.Core\obj\Debug\Quiz.Core.pdb
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\PROJET2\Quiz.Core\obj\Debug\Quiz.Core.csproj.AssemblyReference.cache

@@ -7,29 +7,26 @@
 
 
 <h2>Quizzes</h2>
-@*<div class="col-md-2">
-    <h4>Themes</h4>
-    <div class="list-group">
-        @Html.ActionLink("Toutes", "Index", null, new { @class = Request["Theme"] == null ? "list-group-item active" : "list-group-item" })
-        @foreach (var cat in Model.GetThemes)
-        {
-@Html.ActionLink(cat.ThemeName, "Index", new { Theme = cat.ThemeName }, new { @class = Request["Theme"] == cat.ThemeName ? "list-group-item active" : "list-group-item" })}
-    </div>
-</div>*@
 
-<div class="col-md-10">
+
+<div class="col-md-12">
     @foreach (var qz in Model.GetQuizzs)
-    {
-<div class="col-md-4" style="height:300px;padding:10px;margin:10px;border:solid thin solid">
-    <div class="col-md-12">
-        <img style="height:150px" src="~/Content/Images/Quiz/@qz.Image" />
-    </div>
-    <div class="col-md-12">
-        <p>@qz.Title</p>
-    </div>
-    <div class="col-md-12">
-        <p><a href="/Home/Demarrer/@qz.Id">Démarrer</a></p>
-    </div>
-</div>}
+    {<div class="container">
+            <div class="row">
+                <div class="col-md-4" style="height:300px;padding:10px;margin:10px;border:solid thin solid">
+                    <div class="col-md-12">
+                        <img style="height:150px" src="~/Content/Images/Quiz/@qz.Image" />
+                    </div>
+                    <div class="col-md-12">
+                        <p>@qz.Title</p>
+                    </div>
+                    <div class="col-md-12">
+                        <p><a href="/Home/Demarrer/@qz.Id">Démarrer</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
 </div>
 

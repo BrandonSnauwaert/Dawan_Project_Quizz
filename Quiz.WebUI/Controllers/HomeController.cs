@@ -45,6 +45,8 @@ namespace Quiz.WebUI.Controllers
             model.GetQuizzs= Quizs;
             model.GetThemes = Themes;
 
+            
+
             return View(model);
         }
 
@@ -57,6 +59,7 @@ namespace Quiz.WebUI.Controllers
             Question qst =repo_qst.Collection().SingleOrDefault(q => q.QuizId == id && q.NumOrder == 1);
 
 
+            Session["Nbre_Qst"] = repo_qst.Collection().Where(q => q.QuizId == id).Count();
             return View("Progression", qst);
         }
 
@@ -81,7 +84,7 @@ namespace Quiz.WebUI.Controllers
                 }
                 else
                 {
-                    score--;
+                   
                     Session["score"] = score;
                 }
             }
@@ -97,7 +100,7 @@ namespace Quiz.WebUI.Controllers
                 bool exist = tabRep.Contains(false);
                 if (exist)
                 {
-                    score--;
+                    
                     Session["score"] = score;
                 }
                 else

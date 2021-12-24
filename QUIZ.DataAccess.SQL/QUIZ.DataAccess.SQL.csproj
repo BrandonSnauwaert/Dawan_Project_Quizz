@@ -65,6 +65,10 @@
     <Compile Include="Migrations\202112211153149_ChangementModelQuizz.Designer.cs">
       <DependentUpon>202112211153149_ChangementModelQuizz.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112241117426_AddFildsOfUser.cs" />
+    <Compile Include="Migrations\202112241117426_AddFildsOfUser.Designer.cs">
+      <DependentUpon>202112241117426_AddFildsOfUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyContext.cs" />
     <Compile Include="PlayerRepository.cs" />
@@ -87,6 +91,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112211153149_ChangementModelQuizz.resx">
       <DependentUpon>202112211153149_ChangementModelQuizz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112241117426_AddFildsOfUser.resx">
+      <DependentUpon>202112241117426_AddFildsOfUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

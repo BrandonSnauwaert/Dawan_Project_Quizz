@@ -2300,7 +2300,7 @@ input::-moz-focus-inner {
 		appearance: radio;
 		display: block;
 		float: left;
-		margin-right: 3%;
+		margin-right: -2px;
 		opacity: 1;
 		width: 1em;
 		z-index: -1;

@@ -12,7 +12,12 @@ namespace Quiz.Core.Models
     {
         [Required]
         //[MaxLength(20), MinLength(3)]
+        [Display(Name = "Pseudo")]
         public string Username { get; set; }
+        [Required]
+        [EmailAddress]
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
@@ -22,7 +27,13 @@ namespace Quiz.Core.Models
         [Required]
         [DataType(DataType.Password)]
         //[MinLength(6)]
+        [Display(Name ="Confirmation du Password")]
         public string ConfirmPWD { get; set; }
+
+        public int TotalPoints { get; set; }
+
+        public string Avatar { get; set; }
+
 
         public TypeUtilisateur TypeUtilisateur { get; set; }
 
