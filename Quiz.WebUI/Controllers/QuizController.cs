@@ -25,9 +25,18 @@ namespace Quiz.WebUI.Controllers
         }
 
         // GET: Quiz
-        public ActionResult Index()
+        public ActionResult Index(string theme = null)
         {
-            return View(quizDao.Collection().ToList());
+            QuizzesThemesViewModel model = new QuizzesThemesViewModel();
+            model.Themes = themeDao.Collection().ToList();
+
+            if (theme != null)
+                model.Quizzes = quizDao.Collection().Where(q => q.ThemeName == theme).ToList();
+            else
+                model.Quizzes = quizDao.Collection().ToList();
+                
+
+            return View(model);
         }
 
         public ActionResult Details(int? id)
@@ -53,7 +62,7 @@ namespace Quiz.WebUI.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Title")] Quizz quiz, HttpPostedFileBase image)
+        public ActionResult Create([Bind(Include = "Id,Title,ThemeName")] Quizz quiz, HttpPostedFileBase image)
         {
             if (ModelState.IsValid)
             {
